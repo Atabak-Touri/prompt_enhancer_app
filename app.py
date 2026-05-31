@@ -7,10 +7,21 @@ st.set_page_config(page_title="Prompt Enhancer Pro", page_icon="✨", layout="wi
 # 2. Sidebar Configuration
 with st.sidebar:
     st.header("⚙️ Settings")
-    api_key = st.text_input("Gemini API Key:", type="password", help="Your key is not saved or stored anywhere.")
+    api_key = st.text_input("Gemini API Key:", type="password")
+    
+    # NEW: Collapsible help section for the API Key
+    with st.expander("ℹ️ How to get a free API key"):
+        st.markdown("""
+        1. Go to [Google AI Studio](https://aistudio.google.com/)
+        2. Sign in with your Google account.
+        3. Click **Get API Key**.
+        
+        *Note: The Gemini API offers a generous free tier. Your key is used locally and is **never** saved or stored by this app.*
+        """)
     
     st.markdown("---")
     
+    # ADDED BACK: The category selection so the app knows what 'prompt_category' is!
     st.subheader("Prompt Options")
     prompt_category = st.selectbox(
         "What type of task is this?",
