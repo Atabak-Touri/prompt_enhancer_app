@@ -19,4 +19,4 @@ This application is powered by Google's Gemini 2.5 Flash model, which includes a
 * Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/atabak-touri-084ba397/)!
 
 ## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE) file for details.
