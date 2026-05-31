@@ -1,3 +1,8 @@
+"""
+Prompt Enhancer Pro
+Created by Atabak Touri
+License: MIT
+"""
 import streamlit as st
 from google import genai
 
