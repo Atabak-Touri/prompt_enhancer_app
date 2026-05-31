@@ -1,15 +1,15 @@
 import streamlit as st
 from google import genai
 
-# 1. UI Setup: Wider layout and an icon
+
 st.set_page_config(page_title="Prompt Enhancer Pro", page_icon="✨", layout="wide")
 
-# 2. Sidebar Configuration
+
 with st.sidebar:
     st.header("⚙️ Settings")
     api_key = st.text_input("Gemini API Key:", type="password")
     
-    # NEW: Collapsible help section for the API Key
+    
     with st.expander("ℹ️ How to get a free API key"):
         st.markdown("""
         1. Go to [Google AI Studio](https://aistudio.google.com/)
@@ -28,7 +28,7 @@ with st.sidebar:
         ["General", "Coding & Tech", "Business & Marketing", "Creative Writing"]
     )
 
-# 3. Main Page Layout
+#  Main Page Layout
 st.title("✨ AI Prompt Enhancer Pro")
 st.write("Turn your basic idea into a highly structured, professional prompt ready for any LLM.")
 
@@ -38,7 +38,7 @@ user_basic_prompt = st.text_area(
     height=150
 )
 
-# 4. Action Button with primary styling
+
 if st.button("Enhance My Prompt", type="primary"):
     
     if not api_key:
